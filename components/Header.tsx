@@ -25,11 +25,11 @@ export default function Header({}: Props) {
          >
             <SocialIcon 
                 url = 'https://github.com/Oyoi'
-                fgColor = '#0c4a6e'
+                fgColor = 'white'
                 bgColor = 'transparent' />
             <SocialIcon 
                 url = 'https://www.linkedin.com/in/kevin-vu-b84833210/'
-                fgColor = '#0c4a6e'
+                fgColor = 'white'
                 bgColor = 'transparent' />
         </motion.div>
         <motion.div
@@ -50,12 +50,12 @@ export default function Header({}: Props) {
             <SocialIcon
                 className = 'cursor-pointer'
                 network = 'email'
-                fgColor = '#0c4a6e'
+                fgColor = 'white'
                 bgColor = 'transparent' />
-            <p className = 
-                'uppercase hidden md:inline-flex text-sm text-[#0c4a6e]'>
+              <p className = 
+                'uppercase hidden md:inline-flex text-sm text-white'>
                 Contact
-                </p>
+              </p>
         </motion.div>
     </header>
   )
