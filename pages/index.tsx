@@ -4,6 +4,8 @@ import { Inter } from '@next/font/google'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
+import Skills from '@/components/Skills'
+import Projects from '../components/Projects'
 import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,20 +21,16 @@ export default function Home() {
       <section id = 'hero' className = 'snap-center'>
         <Hero />
       </section>
-      {/* About */}
       <section id = 'about' className = 'snap-center'>
         <About />
       </section>
-      {/* Skills */}
-      <section id = 'skills'>
-
+      <section id = 'skills' className = 'snap-center'>
+        <Skills />
       </section>
-      {/* Project */}
-      <section id = 'projects'>
-
+      <section id = 'projects' className = 'snap-center'>
+        <Projects />
       </section>
-      {/* Contact Me */}
-      <section id = 'contactme'>
+      <section id = 'contact'>
 
       </section>
       

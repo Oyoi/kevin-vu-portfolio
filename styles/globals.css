@@ -6,4 +6,13 @@
     .uiButton {
         @apply px-6 py-2 mx-2 border border-[#0f0f10] rounded-full uppercase text-xs tracking-widest text-white transition-all hover:bg-slate-500/30 hover:border-sky-500 hover:text-sky-500/60
     }
+    .underlineText {
+        @apply underline decoration-2 decoration-sky-500/50 underline-offset-8
+    }
+
+@layer base {
+    html {
+    @apply scroll-smooth;
+  }
+}
 }

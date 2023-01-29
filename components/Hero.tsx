@@ -19,12 +19,12 @@ export default function Hero({}: Props) {
     });
 
     return (
-    <div className = 'h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className = 'z-0 h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden scroll-smooth'>
         <HeroDec />
         <Image src = {Placeholder} alt = ' ' 
         className = 'rounded-3xl  relative h-32 w-32 object-cover' />
         <div className = 'z-30'>
-            <h2 className = 'text-sm text-center justify-center uppercase text-white p-2 tracking-[13px]'>
+            <h2 className = 'text-sm text-center justify-center uppercase text-white p-2 tracking-[12px]'>
             Software Engineer
             </h2>
             <h1 className = 'z-20 text-5xl lg:6xl font-semibold mt-4 px-10'>
