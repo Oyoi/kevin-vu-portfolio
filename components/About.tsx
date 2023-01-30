@@ -1,4 +1,5 @@
-import { MotionConfig } from 'framer-motion'
+import Image from 'next/image'
+import Placholder from '../images/ok.png'
 import { motion } from 'framer-motion'
 import React from 'react'
 
@@ -10,8 +11,7 @@ export default function About({}: Props) {
       <h1 className = 'absolute top-24 uppercase tracking-[8px] text-white text-2xl'>
         About
       </h1>
-      <motion.img
-      src = ' ' alt = ' '
+      <motion.div
       className = 'mb-20 flex-shrink-0 w-56 h-56 rounded-full object-cover md:mb-0 md:rounded-xl md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'
       initial = {{
         y: 300,
@@ -26,17 +26,19 @@ export default function About({}: Props) {
       }}
       viewport = {{
         once: true
-      }} />
+      }}>
+        <Image src = {Placholder} alt = ' ' 
+        className = 'absolute mb-20 flex-shrink-0 w-56 h-56 rounded-full object-cover md:mb-0 md:rounded-xl md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'/>
+      </motion.div>
 
       <div className = 'space-y-10 px-0 md:px-10'>
         <h3 className = 'text-4xl text-white font-semibold'>
           Let&apos;s <span className = 'underlineText'>cut to</span> the <span className = 'underlineText'>chase</span>
         </h3>
-        <p className = 'text-xl'>
+        <p className = 'text-xl text-justify'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { imgLink } from './Skills'
 
 type Props = {
     directionLeft ?: boolean;

@@ -3,8 +3,6 @@ import SkillButton from '../components/SkillButton'
 
 type Props = {}
 
-export let imgLink:string;
-
 export default function Skills({}: Props) {
   return (
      <div className = 'z-0 flex flex-col relative h-screen text-center md;text-center md:flex-row max-w-6xl px-10 justify-evenly mx-auto items-center scroll-smooth'>
@@ -14,7 +12,7 @@ export default function Skills({}: Props) {
         <h3 className = 'absolute top-48 text-lg text-white tracking-[3px] font-semibold hidden md:inline'>
             What I have to offer
         </h3>
-        <div className = 'absolute border-x-0 border-y-[6px] border-white/63 md:w-[500px] md:h-[500px] lg:w-[630px] lg:h-[630px] rounded-t-md rounded-b-md'/> 
+        <div className = 'absolute border-x-0 border-y-[6px] border-white/63 md:w-[500px] md:h-[500px] lg:w-[630px] lg:h-[630px]'/> 
         <div className = 'grid grid-cols-4 gap-3'>
             <SkillButton imgLink='https://img.icons8.com/color/512/c-plus-plus-logo.png' skillName = 'C++' proficiency = { 90 } />
             <SkillButton imgLink='https://img.icons8.com/color/512/python.png' skillName = 'Python' proficiency = { 85 } />
