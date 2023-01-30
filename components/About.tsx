@@ -14,11 +14,11 @@ export default function About({}: Props) {
       src = ' ' alt = ' '
       className = 'mb-20 flex-shrink-0 w-56 h-56 rounded-full object-cover md:mb-0 md:rounded-xl md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'
       initial = {{
-        y: -300,
+        y: 300,
         opacity: 0
       }}
       transition = {{
-        duration: 1.15
+        duration: 1
       }}
       whileInView = {{
         y: 0,
