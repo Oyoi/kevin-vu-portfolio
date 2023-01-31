@@ -48,16 +48,16 @@ export default function Header({}: Props) {
         transition = {{
           duration: 1.15,
         }}>
+          <SocialIcon
+          className = 'cursor-pointer'
+          network = 'email'
+          fgColor = 'white'
+          bgColor = 'transparent'
+          url = '/#contact' />
           <Link href = '#contact'>
-            <SocialIcon
-                className = 'cursor-pointer'
-                network = 'email'
-                fgColor = 'white'
-                bgColor = 'transparent' />
-              <p className = 
-                'uppercase hidden md:inline-flex text-sm text-white'>
-                Contact
-              </p>
+            <p className = 'uppercase hidden md:inline-flex text-sm text-white'>
+              Contact
+            </p>
           </Link>
         </motion.div>
     </header>
