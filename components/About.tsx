@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Placholder from '../images/ok.png'
+import kevin1 from '../images/image1.png'
 import { motion } from 'framer-motion'
 import React from 'react'
 
@@ -27,7 +27,7 @@ export default function About({}: Props) {
       viewport = {{
         once: true
       }}>
-        <Image src = {Placholder} alt = ' ' 
+        <Image src = {kevin1} alt = ' ' 
         className = 'absolute mb-20 flex-shrink-0 w-56 h-56 rounded-full object-cover md:mb-0 md:rounded-xl md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'/>
       </motion.div>
 
@@ -36,7 +36,7 @@ export default function About({}: Props) {
           Let&apos;s <span className = 'underlineText'>cut to</span> the <span className = 'underlineText'>chase</span>
         </h3>
         <p className = 'text-xl text-justify'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Hello, I&apos;m Kevin, I have been programming for a little over 6 years. I have always had an interest in technology from a young age and my interest blossomed into passion after I built my first static website in highschool. As I pursued my degree and learned more about my field, I came to love the concept of optimization. Being an avid fan and excelling at math, I enjoy the intricacies of optimizing my code to run as efficiency as possible and proving its time and space complexity, to the limits of my knowledge. On my spare time, I like to indulge myself with the weath of knowledge from books, articles, and videos to further improve my craft.
         </p>
       </div>
     </div>

@@ -1,47 +1,30 @@
 import React from 'react'
-import { Card, Text, Modal } from "@nextui-org/react";
+import Image from 'next/image';
+import { Card } from "@nextui-org/react";
 
 type Props = {
     projectName:string;
     projectDescription:string;
     usedTech:string[];
+    imgSrc:any;
 }
 
 export default function ProjectCard({ projectName, projectDescription,
-    usedTech }: Props) {
-    const [visible, setVisible] = React.useState(false);
-    const handler = () => setVisible(true);
-    const closeHandler = () => {
-    setVisible(false)}
-    return (
+    usedTech, imgSrc }: Props) {
+    return(
     <article className = 'flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 p-12 snap-center hover:opacity-100 opacity-60 '>
-        <div>
-            <Modal
-            closeButton
-            blur
-            aria-labelledby="modal-title"
-            open = {visible}
-            onClose = {closeHandler}>
-            <Modal.Header>
-        
-            </Modal.Header>
-            <Modal.Body>
-
-            </Modal.Body>
-            </Modal> 
+        <div> 
             <Card
-            onPress={ handler }
-            className = 'z-30'
             isPressable
+            className = 'z-30'
             isHoverable
             variant="bordered"
             css={{ 
             w: "520px",
             h:"520px",
-            background: '$accents9' }} >
-            <Card.Image src = 'https://creazilla-store.fra1.digitaloceanspaces.com/icons/3257070/file-type-svelte-icon-md.png' alt = ' ' className = 'w-32 h-32 rounded-lg lg:w-[200px] lg:h-[250px] object bg-cover object-center' 
-            css = {{ w: "520px", h:"300px" }}/>
-            <Card.Body css={{ w: "520px", h:"200px" }}>
+            background: '$accents9' }} >     
+            <Card.Body css={{ w: "520px", h:"200px" }}> 
+                <Image src = {imgSrc} alt = ' ' className = 'w-[520px] rounded-lg h-[300px] object bg-cover object-center' />   
                 <div className = 'pt-1 text-white font-bold text-xl border-t-2 border-white'>
                     &nbsp;{projectName}
                 </div>

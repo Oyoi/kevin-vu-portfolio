@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Placeholder from '../images/placeholder.png'
+import kevin from '../images/image.png'
 import HeroDec from './HeroDec'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
@@ -21,7 +21,7 @@ export default function Hero({}: Props) {
     return (
     <div className = 'z-0 h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden scroll-smooth'>
         <HeroDec />
-        <Image src = {Placeholder} alt = ' ' 
+        <Image src = { kevin } alt = ' '
         className = 'rounded-2xl  relative h-32 w-32 object-cover' />
         <div className = 'z-30'>
             <h2 className = 'text-sm text-center justify-center uppercase text-white p-2 tracking-[12px]'>

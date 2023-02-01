@@ -10,7 +10,7 @@ export default function Skills({}: Props) {
         Skills
         </h1>
         <h3 className = 'absolute top-48 text-lg text-white tracking-[3px] font-semibold hidden md:inline'>
-            What I have to offer
+            What I bring to the table
         </h3>
         <div className = 'absolute border-x-0 border-y-[6px] border-white/63 md:w-[500px] md:h-[500px] lg:w-[630px] lg:h-[630px]'/> 
         <div className = 'grid grid-cols-4 gap-3'>

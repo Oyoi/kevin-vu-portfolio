@@ -1,9 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-import Image from 'next/image'
-import Placeholder from '../images/placeholder.png'
-
 type Props = {}
 
 export default function HeroDec({}: Props) {
